@@ -175,6 +175,7 @@ async function loadEager(doc) {
     decorateMain(main);
     // wait for alloy to finish loading
     await alloyLoadedPromise;
+    document.body.classList.add("appear");
     // show the LCP block in a dedicated frame to reduce TBT
     await new Promise((res) => {
       window.requestAnimationFrame(async () => {
