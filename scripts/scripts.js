@@ -154,10 +154,10 @@ let alloyLoadedPromise = initWebSDK("./alloy.js", {
   datastreamId: "c2f57ae1-7751-402d-839d-ba448bb4ac1b",
   orgId: "975D01725D5A6B1C0A495EF5@AdobeOrg",
 });
-if (getMetadata("target")) {
-  alloyLoadedPromise.then(() => getAndApplyRenderDecisions());
-}
-
+// if (getMetadata("target")) {
+//   alloyLoadedPromise.then(() => getAndApplyRenderDecisions());
+// }
+alloyLoadedPromise.then(() => getAndApplyRenderDecisions());
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
