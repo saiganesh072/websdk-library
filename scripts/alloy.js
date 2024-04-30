@@ -1,5 +1,4 @@
 "use strict";
-<script>var exports = {};</script>;
 
 Object.defineProperty(exports, "__esModule", {
   value: true,
